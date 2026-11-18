@@ -1,0 +1,49 @@
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/barlow/700.css';
+@import '@fontsource/barlow-semi-condensed/600.css';
+@import '@fontsource/barlow-semi-condensed/700.css';
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Barlow', system-ui, sans-serif;
+  --font-display: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+  --color-gold: #f4a53c;
+  --color-clay: #8b4a3a;
+  --color-ink: #0b0b0b;
+  --color-line: #d4d4d4;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* anchored sections stop below the fixed header */
+[id] {
+  scroll-margin-top: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Awards slider: the active dot fills over the slide's time on screen */
+@keyframes olc-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
