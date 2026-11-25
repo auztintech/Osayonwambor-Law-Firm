@@ -65,10 +65,11 @@ const list = [
     note: '',
   },
   {
-    id: 'up-omorege',
+    id: 'omorege',
     name: 'U. P. Omorege',
     role: 'Associate',
     note: '',
+    
   },
 ]
 
