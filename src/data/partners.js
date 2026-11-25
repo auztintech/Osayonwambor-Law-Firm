@@ -31,13 +31,13 @@ const list = [
   {
     id: 'christopher-o',
     name: 'Christopher Okunbor',
-    role: 'Partner',
+    role: 'Associate',
     note: '',
   },
   {
     id: 'Jennifer-a',
     name: 'Jennifer Agbontean',
-    role: 'Partner',
+    role: 'Associate',
     note: '',
   },
   {
